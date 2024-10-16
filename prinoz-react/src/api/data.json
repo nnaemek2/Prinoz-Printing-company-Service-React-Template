@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "proImg": "/product/01.jpg",
+    "title": "Calendar printing design",
+    "slug": "Calendar-printing-design",
+    "price": "340.00",
+    "delPrice": "380.00",
+    "brand":"Pizza",
+    "size":"Xl"
+  },
+  {
+    "id": 2,
+    "proImg": "/product/02.jpg",
+    "title": "Pattern Pillow",
+    "slug": "Pattern-Pillow",
+    "price": "65.00",
+    "delPrice": "85.00",
+    "brand":"Gucci",
+    "size":"XXl"
+  },
+  {
+    "id": 3,
+    "proImg": "/product/03.jpg",
+    "title": "Glossy button pins",
+    "slug": "Glossy-button-pins",
+    "price": "285.00",
+    "delPrice": "300.00",
+    "brand":"Gucci",
+    "size":"L"
+  },
+  {
+    "id": 4,
+    "proImg": "/product/04.jpg",
+    "title": "Plastic Cosmetic Body  ",
+    "slug": "Plastic-Cosmetic-Body ",
+    "price": "176.00",
+    "delPrice": "178.00",
+    "brand":"Gucci",
+    "size":"M"
+  },
+  {
+    "id": 5,
+    "proImg": "/product/05.jpg",
+    "title": "man dress Punjabi",
+    "slug": "man-dress-Punjabi",
+    "price": "125.00",
+    "delPrice": "130.00",
+    "brand":"Gucci",
+    "size":"XXl"
+  },
+  {
+    "id": 6,
+    "proImg": "/product/06.jpg",
+    "title": "Pure Elegance Unveiled",
+    "slug": "Pure-Elegance-Unveiled",
+    "price": "548.00",
+    "delPrice": "600.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 7,
+    "proImg": "/product/07.jpg",
+    "title": "Baseball cap",
+    "slug": "Baseball-cap",
+    "price": "448.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 8,
+    "proImg": "/product/08.jpg",
+    "title": "Neoprene can",
+    "slug": "Neoprene-can",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 9,
+    "proImg": "/product/09.jpg",
+    "title": "Metal Soft Drink Can",
+    "slug": "Metal-Soft-Drink-Can",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 10,
+    "proImg": "/product/10.jpg",
+    "title": "Mens cvc crew",
+    "slug": "Mens-cvc-crew",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 11,
+    "proImg": "/product/11.jpg",
+    "title": "Still life of hanging bag",
+    "slug": "Still-life-of0hanging-bag",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 12,
+    "proImg": "/product/12.jpg",
+    "title": "Paper book",
+    "slug": "Paper-book",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 13,
+    "proImg": "/product/p-1.png",
+    "title": "Letterhed & Stamps",
+    "slug": "Letterhed-Stamps",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 14,
+    "proImg": "/product/p-2.png",
+    "title": "Clothing t- Shirt",
+    "slug": "Clothing-t-Shirt",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 15,
+    "proImg": "/product/p-3.png",
+    "title": "Package Craft",
+    "slug": "Package-Craft",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 16,
+    "proImg": "/product/p-4.png",
+    "title": "Cover Printing",
+    "slug": "Cover-Printing",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 17,
+    "proImg": "/product/p-5.png",
+    "title": "Sticker Printing",
+    "slug": "Sticker-Printing",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 18,
+    "proImg": "/product/p-2.png",
+    "title": "Custom designing",
+    "slug": "Custom-designing",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 19,
+    "proImg": "/product/popular-product/01.jpg",
+    "title": "Clothing t- Shirt",
+    "slug": "Custom-designing1",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 20,
+    "proImg": "/product/popular-product/02.jpg",
+    "title": "Chromatees t-shirt",
+    "slug": "Chromatees-tshirt",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 21,
+    "proImg": "/product/popular-product/03.jpg",
+    "title": "Paper sticky notes",
+    "slug": "Paper-sticky-notes",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 22,
+    "proImg": "/product/popular-product/04.jpg",
+    "title": "Paper Product Box",
+    "slug": "Paper-Product-Box",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 23,
+    "proImg": "/product/popular-product/05.jpg",
+    "title": "Monday Cup",
+    "slug": "monday-cup",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  },
+  {
+    "id": 23,
+    "proImg": "/product/popular-product/03.jpg",
+    "title": "Monday Cup",
+    "slug": "monday-cup1",
+    "price": "348.00",
+    "delPrice": "500.00",
+    "brand":"Gucci",
+    "size":"Xl"
+  }
+
+]

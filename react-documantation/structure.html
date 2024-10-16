@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Documantation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar-wrap">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="installation.html">Installation</a></li>
+            <li class="active"><a href="structure.html"> File Structure</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <!-- <li><a href="changelog.html">Changelog</a></li> -->
+        </ul>
+    </div>
+    <div class="header-area">
+        <div class="logo">
+            <img src="assets/images/logo.svg" alt="">
+        </div>
+        <h2>File Structure</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-wrap">
+                        <div class="structure-wrap">
+                            <h3>PROJECT STRUCTURE</h3>
+                            <p>Prinoz has React project: </p>
+                            <pre class="documentation__structure">
+                                <code>
+                                    Prinoz/
+                                    |——template
+                                    |  |——docs/
+                                    |  |  |——sass/     
+                                    |  |  |——general
+                                    |  |  |——js
+                                    |  |——app/
+                                    |  |  |——components/                    --all basic component here
+                                    |  |  |    |—— 404/
+                                    |  |  |    |—— about/
+                                    |  |  |    |—— about2/
+                                    |  |  |    |—— about3/
+                                    |  |  |    |—— Accordion/
+                                    |  |  |    |—— BlogDetails/
+                                    |  |  |    |—— BlogList/
+                                    |  |  |    |—— BlogSection/
+                                    |  |  |    |—— BlogSectionS3/
+                                    |  |  |    |—— BlogSidebar/
+                                    |  |  |    |—— BrandSection/
+                                    |  |  |    |—— BrandSectionsS2/
+                                    |  |  |    |—— CheckoutSection/
+                                    |  |  |    |—— ContactForm/
+                                    |  |  |    |—— Contactpage/
+                                    |  |  |    |—— countdown/
+                                    |  |  |    |—— CtaSection/
+                                    |  |  |    |—— CtaSectionS2/
+                                    |  |  |    |—— CtaVideoSection/
+                                    |  |  |    |—— CursorMaus/
+                                    |  |  |    |—— FaqSection/
+                                    |  |  |    |—— FeatureSection/
+                                    |  |  |    |—— FeatureSectionS2/
+                                    |  |  |    |—— footer/
+                                    |  |  |    |—— footerS2/
+                                    |  |  |    |—— footerS3/
+                                    |  |  |    |—— FunFact/
+                                    |  |  |    |—— header/
+                                    |  |  |    |—— headerS2/
+                                    |  |  |    |—— headerS3/
+                                    |  |  |    |—— HeaderTopbar/
+                                    |  |  |    |—— HeaderTopbarS2/
+                                    |  |  |    |—— HeaderTopbarS3/
+                                    |  |  |    |—— hero/
+                                    |  |  |    |—— hero2/
+                                    |  |  |    |—— hero3/
+                                    |  |  |    |—— IconboxSection/
+                                    |  |  |    |—— MarqueeSection/
+                                    |  |  |    |—— MarqueeSectionS2/
+                                    |  |  |    |—— MarqueeSectionS3/
+                                    |  |  |    |—— MarqueeSectionS4/
+                                    |  |  |    |—— MobileMenu/
+                                    |  |  |    |—— ModalVideo/
+                                    |  |  |    |—— Navbar/
+                                    |  |  |    |—— NavbarS2/
+                                    |  |  |    |—— NavbarS3/
+                                    |  |  |    |—— OrderRecivedSec/
+                                    |  |  |    |—— pagetitle/
+                                    |  |  |    |—— PortfolioSection/
+                                    |  |  |    |—— PricingSection/
+                                    |  |  |    |—— ProcessSection/
+                                    |  |  |    |—— ProcessSectionS2/
+                                    |  |  |    |—— ProductSection/
+                                    |  |  |    |—— ProductSectionS2/
+                                    |  |  |    |—— ProductSectionS3/
+                                    |  |  |    |—— ProductSectionS4/
+                                    |  |  |    |—— ProductSectionS5/
+                                    |  |  |    |—— ProjectSectionS2/
+                                    |  |  |    |—— ProjectSectionS3/
+                                    |  |  |    |—— QualityPrintingSection/
+                                    |  |  |    |—— ServiceSection/
+                                    |  |  |    |—— ServiceSectionS2/
+                                    |  |  |    |—— ServiceSectionS3/
+                                    |  |  |    |—— ServiceSectionS4/
+                                    |  |  |    |—— ShopbannerSection/
+                                    |  |  |    |—— ShopBannerSectionS2/
+                                    |  |  |    |—— ShopProduct/
+                                    |  |  |    |—— StoreSection/
+                                    |  |  |    |—— Testimonial/
+                                    |  |  |    |—— TestimonialSectionS2/
+                                    |  |  |    |—— TestimonialSectionS3/
+                                    |  |  |    |—— UiStyle/
+                                    |  |  |    |—— WorksSection/
+                                    |  |  |-main-component/
+                                    |  |  |    |——__router/                 --all route file
+                                    |  |  |    |——App/                      --main app js
+                                    |  |  |    |——AboutPage/                      --AboutPage
+                                    |  |  |    |——BlogDetails/                    --BlogDetails
+                                    |  |  |    |——BlogPage/                    --BlogPage
+                                    |  |  |    |——CartPage/                    --CartPage
+                                    |  |  |    |——CheckoutPage/                    --CheckoutPage
+                                    |  |  |    |——ContactPage/                    --CheckoutPage
+                                    |  |  |    |——ErrorPage/                    --ErrorPage
+                                    |  |  |    |——HomePage/                    --Home Page
+                                    |  |  |    |——HomePage2/                    --Home Page2
+                                    |  |  |    |——HomePage3/                    --Home Page3
+                                    |  |  |    |——OrderRecived/                    --OrderRecived
+                                    |  |  |    |——ProjectPage/                    --ProjectPage
+                                    |  |  |    |——ProjectSinglePage/                    --ProjectSinglePage
+                                    |  |  |    |——ServicePage/                    --ServicePage
+                                    |  |  |    |——ServiceSinglePage/                    --ServiceSinglePage
+                                    |  |  |    |——ShopPage/                    --ShopPage
+                                    |  |  |    |——ShopSinglePage/                    --ShopSinglePage
+                                    |  |  |——images/                        --all static images 
+                                    |  |  |——tests/                         --test file
+                                    |  |  |——utils/                         --all statick data and common js
+                                    |  |  |——app.js
+                                    |  |  |——styles.js
+                                    |  |  |——index.html
+                                    |  |  |——.env                       
+                                    |  |——package.json
+                                    |  |——package-lock.json
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js "></script>
+    <!-- popper.min.js -->
+    <script src="assets/js/vendor/popper.min.js "></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js "></script>
+    <!-- main js -->
+    <script src="assets/js/scripts.js "></script>
+</body>
+
+</html>

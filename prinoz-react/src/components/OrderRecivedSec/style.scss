@@ -1,0 +1,57 @@
+.cart-recived-section{
+    .order-top{
+       padding: 40px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
+       flex-wrap: wrap;
+
+       @media(max-width:767px){
+         padding: 20px;
+       }
+
+       h2{
+           span{
+               display: block;
+               font-size: 18px;
+               color: #888;
+               margin-top: 10px;
+               font-weight: 500;
+               margin-bottom: 10px;
+           }
+       }
+
+    }
+    .cartStatus{
+         padding: 40px;
+         box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
+         margin-top: 40px;
+
+         @media(max-width:767px){
+         padding: 20px;
+         }
+
+         .cartTotals{
+             img{
+                 width: 80px;
+                 height: 80px;
+                 object-fit: cover;
+                 margin-right: 10px;
+             }
+             tr{
+                 &:last-child{
+                     td{
+                         border-bottom: 0;
+       
+                     }
+                 }
+             }
+         }
+
+         .MuiTableCell-body{
+          padding-left: 0;
+
+         }
+    }
+}

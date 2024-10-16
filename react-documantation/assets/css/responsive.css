@@ -1,0 +1,58 @@
+/* (1366x768) WXGA Display */
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {}
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1197.98px) {
+    
+}
+
+@media (max-width: 991.98px) {
+    
+}
+
+/* Normal desktop :991px. */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+/*mobile :320px. */
+
+@media (max-width: 767.98px) {
+    .main-container {
+        padding: 0;
+    }    
+    .sidebar-wrap {
+        position: static;
+        width: 100%;
+        padding: 30px;
+        min-height: unset;
+        padding-top: 120px;
+        margin-bottom: 40px;
+    }
+    .header-area {
+        box-shadow: none;
+        padding: 20px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+        width: 100%;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+   
+}
+
+/* small mobile :480px. */
+
+@media (min-width: 480px) and (max-width: 575.98px) {
+    .container {
+        width: 450px;
+    }
+}

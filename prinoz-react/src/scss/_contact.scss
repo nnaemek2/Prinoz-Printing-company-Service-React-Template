@@ -1,0 +1,134 @@
+.contact-info-items {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 10px 0px rgba(242, 242, 242, 0.18);
+    padding: 60px 30px;
+    @include transition;
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        @include transition;
+    }
+
+    .content {
+        margin-top: 20px;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &:hover, &.active {
+        background-color: #600EE4;
+
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .icon {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(2%) hue-rotate(183deg) brightness(107%) contrast(101%);
+        }
+
+        .content {
+            h3, p {
+                color: $white;
+            }
+        }
+    }
+}
+
+.contact-area {
+    .map-content-area {
+        h3 {
+            margin-bottom: 15px;
+            margin-top: -10px;
+            font-size: 44px;
+        }
+
+        .google-map {
+            margin-top: 50px;
+
+            iframe {
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+
+    .contact-form-items {
+        .contact-title {
+            margin-bottom: 30px;
+
+            h3 {
+                margin-top: -10px;
+                font-size: 44px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .form-clt {
+            position: relative;
+            .icon {
+                position: absolute;
+                top: 18px;
+                left: 0;
+
+                @include breakpoint(max-sm){
+                  display: none;
+                }
+
+                i {
+                    color: $header-color;
+                }
+            }
+
+            input{
+                width: 100%;
+                outline: none;
+                border: none;
+                padding: 20px 30px;
+                color: $text-color;
+                background-color: transparent;
+                text-transform: capitalize;
+                font-weight: 500;
+                border-bottom: 1px solid $text-color;
+
+                @include breakpoint(max-sm){
+                    padding: 15px 20px;
+                }
+            }
+        }
+
+        .form-clt-big {
+    
+            textarea {
+                padding: 20px 30px 110px;
+                width: 100%;
+                outline: none;
+                border: none;
+                color: $text-color;
+                background-color: transparent;
+                text-transform: capitalize;
+                font-weight: 500;
+                border-bottom: 1px solid $text-color;
+            }
+        }
+
+        .theme-btn {
+            border-radius: 0;
+            background-color: #600EE4;
+
+            i {
+                margin-left: 0;
+                margin-right: 10px;
+            }
+
+            &::before {
+                background-color: $header-color;
+            }
+        }
+    }
+}

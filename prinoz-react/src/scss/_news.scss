@@ -1,0 +1,734 @@
+.blog-section {
+    margin: 0 60px;
+    border-radius: 53px;
+
+    @include breakpoint (max-xxxl) {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .section-title {
+        h6 {
+            background: #FEC9FF;
+            color: $header-color;
+        }
+    }
+}
+
+.blog-section-3 {
+    background-image: transparent;
+}
+
+.blog-box-items {
+    margin-top: 30px;
+
+    .blog-image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            @include imgw;
+            position: relative;
+            display: block;
+            object-fit: cover;
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            border-radius: 15px;
+
+            &:first-child {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                -webkit-transform: translateX(50%) scaleX(2);
+                transform: translateX(50%) scaleX(2);
+                opacity: 0;
+                -webkit-filter: blur(10px);
+                filter: blur(10px);
+                border-radius: 15px;
+                @include transition;
+            }
+        }
+    }
+
+    .blog-content {
+        margin-top: 25px;
+        margin-left: 20px;
+
+        span {
+            color: #FF1B1B;
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            padding-bottom: 20px;
+
+            a {
+                &:hover {
+                    color: $theme-color
+                }
+            }
+        }
+
+        .blog-meta {
+            @include flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba(0, 23, 38, 0.10);
+            padding-top: 20px;
+
+            li {
+                i {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .blog-image {
+            img {
+                &:first-child {
+                    -webkit-transform: translateX(0) scaleX(1);
+                    transform: translateX(0) scaleX(1);
+                    opacity: 1;
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
+                }
+
+                &:nth-child(2) {
+                    -webkit-transform: translateX(-50%) scaleX(2);
+                    transform: translateX(-50%) scaleX(2);
+                    opacity: 0;
+                    -webkit-filter: blur(10px);
+                    filter: blur(10px);
+                }
+            }
+        }
+    }
+}
+
+.blog-wrapper {
+    margin-bottom: 130px;
+}
+
+.news-standard-wrapper {
+    .news-standard-items {
+        .news-thumb {
+            position: relative;
+
+            img {
+                @include imgw;
+                border-radius: 20px;
+            }
+
+            .post-cat {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                font-size: 20px;
+                background-color: $theme-color;
+                color: $white;
+                font-weight: 700;
+                padding: 10px 25px;
+                border-radius: 12px;
+            }
+        }
+
+        .news-content {
+            margin-top: 30px;
+
+            .post-meta {
+                margin-bottom: 20px;
+
+                span {
+                    color: $text-color;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1;
+                    display: inline-block;
+                    margin-right: 25px;
+
+                    @media (max-width: 767px) {
+                        font-size: 15px;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                        color: $theme-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: 20px;
+
+                a {
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            .link-btns {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 16px;
+                display: inline-block;
+                margin-top: 30px;
+
+                i {
+                    margin-left: 10px;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+}
+
+.main-sidebar {
+    .news-profile-items {
+        text-align: center;
+
+        .content {
+            margin-top: 25px;
+
+            h6 {
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-size: 14px;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+
+            .social-icon {
+                justify-content: center;
+                gap: 13px;
+                margin-top: 30px;
+
+                a {
+                    width: 44px;
+                    height: 37px;
+                    line-height: 37px;
+                    text-align: center;
+                    border-radius: 6px;
+                    border: 1px solid #E8E8E8;
+                    color: $text-color;
+                    display: inline-block;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .single-sidebar-widget {
+        background-color: #F4F6F8;
+        padding: 40px 35px;
+        border-radius: 15px;
+
+        .wid-title {
+            margin-bottom: 20px;
+            padding-left: 10px;
+            position: relative;
+
+            &::before {
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                width: 2px;
+                height: 21px;
+                position: absolute;
+                background-color: $theme-color;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .search_widget {
+            form {
+                width: 100%;
+                position: relative;
+
+                input {
+                    background-color: $white;
+                    font-size: 15px;
+                    width: 100%;
+                    border: none;
+                    text-transform: capitalize;
+                    color: #9D9E9F;
+                    border-radius: 7px;
+                    padding: 12px 22px;
+                }
+
+                button {
+                    position: absolute;
+                    right: 24px;
+                    top: 12px;
+                    font-size: 18px;
+                    color: $header-color;
+                    text-align: center;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+
+        .news-widget-categories {
+            ul {
+                li {
+
+                    @include flex;
+                    justify-content: space-between;
+                    padding: 20px 20px;
+                    background-color: $white;
+                    font-weight: 500;
+                    @include transition;
+                    border: 1px solid #F8F1EE;
+                    border-radius: 9px;
+                    font-size: 16px;
+                    line-height: 1;
+
+                    a {
+                        color: #445658;
+                    }
+
+                    span {
+                        @include transition;
+                        color: $header-color;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 12px;
+                    }
+
+                    &:hover {
+                        background-color: $theme-color;
+
+                        a {
+                            color: $white;
+                        }
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+
+                    &.active {
+                        background-color: $theme-color;
+
+                        a {
+                            color: $white;
+                        }
+
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .recent-post-area {
+            .recent-items {
+                @include flex;
+                gap: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+
+                .recent-thumb {
+                    img {
+                        border-radius: 9px;
+                    }
+                }
+
+                .recent-content {
+                    ul {
+                        margin-bottom: 8px;
+
+                        li {
+                            color: $text-color;
+                            font-size: 15px;
+
+                            i {
+                                color: $theme-color;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    h6 {
+                        font-weight: 600;
+
+                        a {
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tagcloud {
+            a {
+                display: inline-block;
+                padding: 11px 20px;
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 500;
+                background: $white;
+                margin-right: 5px;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+                border-radius: 9px;
+                color: $text-color;
+                @include transition;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.news-details-wrapper {
+    .single-news-post {
+        .details-image {
+            img {
+                @include imgw;
+                border-radius: 11px;
+            }
+        }
+
+        .details-content {
+            margin-top: 30px;
+
+            .post-meta {
+                margin-bottom: 20px;
+
+                span {
+                    color: $text-color;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1;
+                    display: inline-block;
+                    margin-right: 25px;
+
+                    @media (max-width: 767px) {
+                        font-size: 15px;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                        color: $theme-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: 20px;
+
+                a {
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+                color: #838383;
+                font-weight: 400;
+            }
+
+            .hilight-text {
+                padding: 40px;
+                background-color: #E8ECEF;
+
+                p {
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    font-family: $heading-font;
+                    color: $header-color;
+                    line-height: 180%;
+                    font-size: 24px;
+                }
+
+                svg {
+                    float: right;
+                    margin-top: -30px;
+                }
+
+                h6 {
+                    font-weight: 500;
+                    padding-left: 30px;
+                    margin-top: 20px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        content: "";
+                        width: 16px;
+                        height: 2px;
+                        background-color: $header-color;
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .details-list {
+                li {
+                    @include flex;
+                    gap: 10px;
+                    font-weight: 400;
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+
+                    i {
+                        font-size: 24px;
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            .post-thumb {
+                img {
+                    @include imgw;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .tag-share-wrap {
+        border-bottom: 1px solid #F6F6F6;
+        padding: 30px 0 40px;
+
+        .tagcloud {
+            span {
+                display: inline-block;
+                font-weight: 700;
+                color: $header-color;
+                margin-right: 15px;
+                font-size: 20px;
+            }
+
+            a {
+                display: inline-block;
+                padding: 12px 26px;
+                line-height: 1;
+                background: $bg-color;
+                margin-right: 8px;
+                text-transform: capitalize;
+                font-weight: 500;
+                -webkit-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+                border-radius: 0;
+
+                @include breakpoint (max-sm) {
+                    margin-bottom: 5px;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+
+        .social-share {
+            span {
+                font-size: 20px;
+                color: $header-color;
+                font-weight: 700;
+            }
+
+            a {
+                font-size: 16px;
+                color: $text-color;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+    .comments-area {
+        margin-top: 40px;
+
+        .comments-heading {
+            margin-bottom: 30px;
+
+            @include breakpoint (max-sm) {
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 28px;
+                font-weight: 700;
+
+                @include breakpoint (max-sm) {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .blog-single-comment {
+
+            @include breakpoint (max-sm) {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            p {
+                font-weight: 400;
+            }
+
+            .content {
+                .head {
+                    .con {
+                        h5 {
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: $text-color;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .reply {
+                        font-size: 20px;
+                        color: $header-color;
+                    }
+                }
+            }
+
+            &.style-2 {
+                @include breakpoint (xl) {
+                    margin-left: 80px;
+                }
+            }
+        }
+    }
+
+    .comment-form-wrap {
+        background: #F0F2F9;
+        padding: 50px;
+        margin-top: 30px;
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+
+            @include breakpoint (max-sm) {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .form-clt {
+
+            input,
+            textarea {
+                width: 100%;
+                outline: none;
+                border: none;
+                background-color: $white;
+                padding: 16px 20px;
+                font-weight: 400;
+                color: $text-color;
+
+                &::placeholder {
+                    color: $text-color;
+                }
+
+            }
+
+            textarea {
+                padding-bottom: 230px;
+            }
+        }
+
+        .srv-validation-message {
+            display: none;
+        }
+
+        .from-customradio {
+
+            .form-check-label {
+                color: #838383;
+                font-size: 16px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .theme-btn {
+            background-color: $theme-color;
+            border-radius: 7px;
+
+            &::before {
+                background-color: $header-color;
+            }
+        }
+    }
+}

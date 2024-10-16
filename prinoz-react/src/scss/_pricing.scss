@@ -1,0 +1,233 @@
+.pricing-box-items {
+    margin-top: 30px;
+    background: $white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.13);
+    padding: 50px 60px;
+    @include transition;
+    position: relative;
+
+    @include breakpoint (max-lg){
+        padding: 45px 35px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 40px 30px;
+    }
+
+    .pricing-tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .pricing-header {
+        border-bottom: 1px solid #E8EAF1;
+        padding-bottom: 20px;
+
+        .icon {
+            font-size: 50px;
+            color: #6865FF;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .pricing-list {
+        margin-top: 25px;
+
+        li {
+            font-weight: 400;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            i {
+                color: #6865FF;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .pricing-btn {
+        margin-top: 50px;
+        
+        .theme-btn {
+            background: rgba(104, 101, 255, 0.08);
+            color: #6865FF;
+            width: 100%;
+
+            &:hover {
+                color: $white;
+
+                .theme-effect {
+                    color: $white;
+                    .effect-1 {
+                        top: -100%;
+                    }
+                }
+            }
+
+            .theme-effect {
+                text-transform: capitalize;
+                position: relative;
+                @include transition;
+                color: $theme-color;
+                z-index: 9;
+                position: relative;
+                overflow: hidden;
+                display: block;
+                height: 21px;
+                line-height: normal;
+                @include transition;
+        
+                .effect-1 {
+                    display: block;
+                    height: 100%;
+                    position: relative;
+                    top: 0%;
+                    @include transition;
+                }
+            }
+        }
+    }
+
+    &.active {
+        background: #600EE4;
+        box-shadow: 0px 1px 14px 0px rgba(18, 20, 32, 0.07);
+
+        .pricing-header {
+            h3,span {
+                color: $white;
+            }
+
+            .icon {
+                color: $white;
+                filter: grayscale(100%) brightness(300%)
+            }
+        }
+    
+        .pricing-list {
+    
+            li {
+                color: $white;
+
+                i {
+                    color: $white;
+                }
+            }
+        }
+    
+        .pricing-btn {
+            .theme-btn {
+                background: $header-color;
+                color: $white;
+
+                .theme-effect {
+                   color: $white;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.pricing-tab-header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include breakpoint (max-md){
+        margin-bottom: 0;
+    }
+
+    .nav {
+        @include flex;
+        gap: 0;
+        background-color: $white;
+        border-radius: 50px;
+        box-shadow: 0px 1px 1px 0px rgba(18, 20, 32, 0.14);
+        padding: 6px;
+        justify-content: center;
+        max-width: 245px;
+        margin: 0 auto;
+
+        @include breakpoint (max-lg){
+            max-width: 325px;
+        }
+
+        @include breakpoint (max-sm){
+            gap: 15px;
+            max-width: 225px;
+        }
+
+        .nav-link {
+            text-align: center;
+            // padding: 10px 40px;
+            // background-color: #EBEBEB;
+            padding: 14px 30px;
+            border-radius: 100px;
+            line-height: 1;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: $header-color;
+            transition: all .3s ease-in-out;
+
+            @include breakpoint (max-lg){
+                padding: 14px 45px;
+                font-size: 18px;
+            }
+
+            @include breakpoint (max-sm){
+               padding: 12px 20px;
+               font-size: 14px;
+            }
+
+            &.active {
+                position: relative;
+                background-color: #600EE4;
+                color: $white;
+            }
+        }
+    }
+}
+
+.pricing-section {
+    position: relative;
+
+    .shape-image {
+        position: absolute;
+        top: 0;
+        left: 50px;
+
+        @include breakpoint (max-lg){
+            display: none;
+        }
+    }
+
+    .shape-image-2 {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        animation: rounded 5s linear infinite;
+
+        @include breakpoint (max-lg){
+            display: none;
+        }
+    }
+
+    .circle-shape {
+        position: absolute;
+        left: 100px;
+        bottom: 25%;
+        animation: cir36 10s linear infinite;
+    }
+}

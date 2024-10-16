@@ -1,0 +1,437 @@
+.testimonial-section {
+   // background-color: #0D1224;
+    margin: 0 70px;
+    border-radius: 60px;
+    margin-bottom: 130px;
+    position: relative;
+
+    @include breakpoint (max-xxxl){
+        margin: 0;
+        border-radius: 0;
+        margin-bottom: 130px;
+    }
+
+    @include breakpoint (max-xl){
+        margin-bottom: 100px;
+    }
+
+    @include breakpoint (max-lg){
+        margin-bottom: 80px;
+    }
+
+    .overlay-shape {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .array-button {
+        position: absolute;
+        top: 115px;
+        right: 100px;
+        z-index: 99;
+
+        @include breakpoint (max-lg){
+            top: 65px;
+            z-index: 999;
+        }
+
+        @include breakpoint (max-sm){
+           display: none;
+        }
+
+        .array-prev {
+            border: 2px solid rgba(255, 255, 255, 0.16);
+            color: $white;
+
+            &:hover {
+                background-color: $theme-color-2;
+                border: 2px solid $theme-color-2;
+            }
+        }
+
+        .array-next {
+            border: 2px solid $white;
+            color: $header-color;
+            background-color: $white;
+
+            &:hover {
+                background-color: $theme-color-2;
+                color: $white;
+                border: 2px solid $theme-color-2;
+            }
+        }
+    }
+}
+
+.testimonial-wrapper {
+
+    .testimonial-content {
+       margin-right: 40px;
+
+       @include breakpoint (max-xl){
+            margin-right: 0;
+       }
+
+        p {
+            font-size: 27px;
+            line-height: 182%;
+            color: $white;
+            padding-bottom: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            margin-bottom: 60px;
+
+            @include breakpoint (max-xl){
+               font-size: 25px;
+            }
+
+            @include breakpoint (max-lg){
+                font-size: 22px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 20px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 18px;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .client-info {
+            @include flex;
+            gap: 55px;
+
+            @include breakpoint (max-sm){
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            h3 {
+                font-size: 22px;
+                color: $white;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: $body-font;
+                }
+            }
+
+            .star {
+                color: #FF8C22;
+                border-radius: 22.5px;
+                background: rgba(255, 255, 255, 0.12);
+                padding: 16px 35px;
+                display: inline-block;
+                line-height: 1;
+            }
+        }
+    }
+
+    .testimoni-image-items {
+        position: relative;
+        text-align: center;
+        margin-left: 60px;
+
+        @include breakpoint (max-xl){
+           margin-left: 0;
+        }
+      
+        &::before {
+            @include before;
+            background-color: rgba(217, 217, 217, .3);
+            border-radius: 21px;
+            top: 30%;
+            height: initial;
+        }
+
+        .testimoni-image {
+            max-width: 413px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 9;
+            padding: 0 25px;
+
+            img {
+                @include imgw;
+            }
+        }
+
+        .work-shape {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            transform: rotate(-6.383deg);
+
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+               display: initial;
+            }
+
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+
+        .line-shape {
+            position: absolute;
+            bottom: 50px;
+            left: 0px;
+            right: 0;
+
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+
+            img {
+                @include imgw;
+            }
+        }
+
+        .icon {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $white;
+            color: #4E29B7;
+            position: absolute;
+            right: -37px;
+            top: 27%;
+            font-size: 32px;
+        }
+    }
+}
+
+.testimonial-box-items {
+    margin-top: 30px;
+    text-align: center;
+    padding: 40px 85px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: 0px 6px 44px 0px rgba(181, 181, 234, 0.20);
+    position: relative;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @include breakpoint (max-md){
+        padding: 40px 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .client-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+    }
+
+    p {
+        font-size: 22px;
+        color: #3C4256;
+        line-height: 168%;
+
+        @include breakpoint (max-md){
+            font-size: 18px;
+        }
+    }
+
+    .client-content {
+        margin-top: 30px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .overlay-style {
+      @include before;
+      border-radius: 20px;
+      box-shadow: 0px 6px 44px 0px rgba(181, 181, 234, 0.20);
+      background-color: $white;
+      z-index: -1;
+      top: 35px;
+      left: 35px;
+      width: 92%;
+    }
+
+    .overlay-style-2 {
+        @include before;
+        border-radius: 20px;
+        box-shadow: 0px 6px 44px 0px rgba(181, 181, 234, 0.20);
+        background-color: $white;
+        z-index: -2;
+        left: 70px;
+        width: 84%;
+        top: 70px;
+      }
+    
+}
+
+.testimonial-section-2  {
+    margin-bottom: -45px;
+    position: relative;
+
+    .client-1 {
+        position: absolute;
+        left: 10%;
+        top: 25%;
+
+        @include breakpoint (max-xl){
+             display: none;
+        }
+    }
+
+    .client-2 {
+        position: absolute;
+        left: 10%;
+        bottom: 25%;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .client-3 {
+        position: absolute;
+        right: 15%;
+        top: 25%;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .client-4 {
+        position: absolute;
+        right: 15%;
+        bottom: 25%;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .client-5 {
+        position: absolute;
+        right: 7%;
+        bottom: 45%;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .line-shape {
+        position: absolute;
+        top: 30%;
+        left: 7%;
+        z-index: -1;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .line-shape-2 {
+        position: absolute;
+        bottom: 30%;
+        right: 12%;
+        z-index: -1;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .array-button {
+        margin-bottom: 45px;
+
+        .array-prev, .array-next {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .array-prev {
+            color: #33373A;
+            box-shadow: (0px 4px 13px rgba(0, 0, 0, 0.09));
+            background-color: $white;
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white;
+            }
+        }
+
+        .array-next {
+            background-color: $theme-color;
+
+            &:hover {
+                background-color: $header-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+.testimonial-box-items-2 {
+    margin-top: 30px;
+    background-color: $white;
+    border-radius: 11px;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.05);
+    padding: 60px 55px;
+
+    @include breakpoint (max-lg){
+        padding: 40px 30px;
+    }
+
+    .clinet-info-items {
+        margin-bottom: 30px;
+        @include flex;
+        justify-content: space-between;
+
+        .star {
+            color: #F09815;
+
+            i {
+                &.color-2 {
+                    color: #DED9D1 !important;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+
+        @include breakpoint (max-lg){
+            font-size: 20px;
+        }
+    }
+
+    p {
+        font-size: 22px;
+        color: $header-color;
+        opacity: 0.8;
+        line-height: 173%;
+        margin-top: 30px;
+
+        @include breakpoint (max-lg){
+           font-size: 18px;
+        }
+    }
+}

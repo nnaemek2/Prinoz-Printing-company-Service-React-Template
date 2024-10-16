@@ -1,0 +1,655 @@
+.hero-1 {
+    padding: 250px 0 100px;
+    border-radius: 0px 0px 90px 90px;
+    position: relative;
+
+    @include breakpoint (max-xl){
+        border-radius: 0;
+    }
+
+    @include breakpoint (max-lg){
+        padding: 200px 0 100px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 150px 0 100px;
+    }
+
+    .circle-shape {
+        position: absolute;
+        left: 42px;
+        top: 15%;
+        animation: cir36 10s linear infinite;
+    }
+
+    .circle-shape-2 {
+        position: absolute;
+        bottom: 105px;
+        right: 80px;
+        animation: cir36 10s linear infinite;
+    }
+
+    .vector-shape {
+        position: absolute;
+        left: 75px;
+        bottom: 22%;
+    }
+
+    .arrow-shape {
+        position: absolute;
+        top: 45%;
+        right: 72px;
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 9;
+
+        h6 {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $heading-font;
+            background-color: $theme-color;
+            color: $header-color;
+            color: $white;
+            padding: 14px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        h1 {
+            @include breakpoint (max-xxl){
+               font-size: 62px;
+            }
+
+            @include breakpoint (max-xl){
+                font-size: 54px;
+            }
+
+            @include breakpoint (max-lg){
+                font-size: 68px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 56px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 42px;
+            }
+
+            span {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+
+                img {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    z-index: -1;
+
+                    @include breakpoint (max-md){
+                       display: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 160%;
+            margin-top: 30px;
+
+            @include breakpoint (max-sm){
+               font-size: 16px;
+            }
+        }
+
+        .list {
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+            li {
+                font-size: 16px;
+                color: #696969;
+                font-weight: 700;
+
+                @include breakpoint (max-sm){
+                    font-size: 16px;
+                }
+
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: $white;
+                    color: #6F32F0;
+                    margin-right: 5px;
+
+                    @include breakpoint (max-sm){
+                       width: 25px;
+                       height: 25px;
+                       line-height: 25px;
+                    }
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .hero-thumb {
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 9;
+        width: 800px;
+        margin-left: -165px;
+        
+        @include breakpoint (max-xxl){
+            margin-bottom: -135px;
+            width: 640px;
+        }
+
+        @include breakpoint (max-xl){
+            margin-left: 0;
+            width: initial;
+        }
+
+        @include breakpoint (max-lg){
+            margin-bottom: -100px;
+            width: 730px;
+        }
+
+        @include breakpoint (max-md){
+          margin-left: 0;
+          width: initial;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            opacity: 0.8;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.00) 100%);
+            content: "";
+            z-index: -1;
+            transform: translateX(-50%);
+
+            @include breakpoint (max-xxl){
+               display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: initial;
+            }
+
+            @include breakpoint (max-sm){
+               display: none;
+            }
+        }
+
+        img {
+             @include imgw;
+        }
+
+        .information-shape {
+            position: absolute;
+            top: 40px;
+            right: -18%;
+
+            img {
+                max-width: initial;
+            }
+
+            @include breakpoint (max-xxxl){
+                display: none;
+            }
+        }
+    }
+}
+
+.hero-2 {
+    position: relative;
+    z-index: 9;
+    margin: 0 68px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 88px;
+
+    @include breakpoint (max-xxxl){
+        margin: 0;
+        border-radius: 0;
+    }
+
+    @include breakpoint (max-xxl){
+       padding: 180px 0;
+
+       &::before {
+            @include before;
+            background-color: $black;
+            opacity: .4;
+       }
+    }
+
+    @include breakpoint (max-lg){
+        padding: 150px 0;
+    }
+    
+    @include breakpoint (max-md){
+        padding: 140px 0;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 120px 0;
+    }
+
+    .flower-shape {
+        position: absolute;
+        top: 90px;
+        left: 70px;
+    }
+
+    .rong-shape {
+        position: absolute;
+        left: 70px;
+        bottom: 70px;
+
+        @include breakpoint (max-xxl){
+           display: none;
+        }
+    }
+
+    .stickers-shape {
+        position: absolute;
+        right: 60px;
+        bottom: 70px;
+    }
+
+    .hero-content {
+        padding: 175px 130px;
+        width: 900px;
+        position: relative;
+        z-index: 9;
+        margin-top: 90px;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        margin-left: 40px;
+
+        @include breakpoint (max-xxxl){
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        @include breakpoint (max-xxl){
+            background-image: none !important;
+            width: initial;
+            padding: 0;
+        }
+
+        @include breakpoint (max-md){
+           text-align: center;
+        }
+
+        h5 {
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            line-height: 1;
+            display: inline-block;
+            margin-bottom: 25px;
+            border-radius: 22px;
+        }
+
+        h1 {
+            font-size: 62px;
+            color: $white;
+            letter-spacing: -1.44px;
+            line-height: 102%;
+            margin-bottom: 30px;
+
+            @include breakpoint (max-lg){
+                font-size: 62px;
+            }
+
+            @include breakpoint (max-md){
+               font-size: 55px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 45px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: $white;
+        }
+
+        .hero-button {
+            margin-top: 30px;
+        }
+    }
+}
+
+.hero-3 {
+    padding: 250px 0 120px;
+    position: relative;
+
+    @include breakpoint (max-lg){
+       padding: 190px 0 120px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 160px 0 120px;
+    }
+
+    .line-shape {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        animation: rounded 5s linear infinite;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+
+    .hero-content {
+        opacity: 0;
+        z-index: 3;
+        position: relative;
+        transform: translateY(-150px);
+
+        h6 {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $heading-font;
+            border-radius: 18.5px;
+            background: #FF003D;
+            color: $white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 20px;
+            line-height: 1;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            
+            @include breakpoint (max-lg){
+                font-size: 62px;
+            }
+
+            @include breakpoint (max-md){
+               font-size: 55px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 36px;
+            }
+
+            span {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+
+                img {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 0;
+                    z-index: -1;
+
+                    @include breakpoint (max-md){
+                       display: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #6E707A;
+            margin-top: 30px;
+        }
+    }
+
+    .hero-button {
+        margin-top: 40px;
+        transform: translateY(150px);
+		opacity: 0;
+
+        .theme-btn {
+            padding: 25px 65px;
+        }
+    }
+
+    .hero-image-items {
+        position: relative;
+        z-index: 9;
+        margin-left: -100px;
+
+        .hero-image {
+            position: relative;
+            z-index: 9;
+            transform: translateY(-150px);
+            opacity: 0;
+
+            @include breakpoint (max-xxxl){
+               margin-left: -100px;
+            }
+
+            @include breakpoint (max-xxl){
+               margin-left: 0;
+            }
+
+            &::before {
+                @include before;
+                width: 570px;
+                height: 570px;
+                border-radius: 50%;
+                box-shadow: 0px 18px 41px 0px #BAD8EC;
+                background-color: rgba(255, 255, 255, 0.6);
+                z-index: -1;
+
+                @include breakpoint (max-xxl){
+                   left: 50%;
+                   top: 50%;
+                   transform: translate(-50%,-50%);
+                }
+
+                @include breakpoint (max-md){
+                    display: none;
+                }
+            }
+
+            img {
+                margin-left: -25px;
+                margin-top: 15px;
+
+                @include breakpoint (max-xxl){
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+
+        .color-box {
+            position: absolute;
+            top: -81px;
+            left: -16%;
+            z-index: 99;
+            //animation: rounded 5s linear infinite;
+            transform: translateX(-150px);
+            opacity: 0;
+
+            @include breakpoint (max-xxxl){
+              left: 0;
+            }
+
+            @include breakpoint (max-xl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: block;
+            }
+
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+
+        .mockup-shape {
+            position: absolute;
+            bottom: -72px;
+            left: -24%;
+            z-index: 99;
+           // animation: translateY2 2s forwards infinite alternate;
+           transform: translateY(150px);
+           opacity: 0;
+
+            @include breakpoint (max-xxxl){
+               left: 0;
+            }
+
+            @include breakpoint (max-xl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: block;
+            }
+
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+
+        .stickers-shape {
+            position: absolute;
+            top: -30px;
+            right: -20px;
+            z-index: 99;
+            transform: translateX(150px);
+            opacity: 0;
+
+            @include breakpoint (max-xxxl){
+               right: 0;
+            }
+
+            @include breakpoint (max-xl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: block;
+            }
+
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+
+        .cap-shape {
+            position: absolute;
+            bottom: 0;
+            right: -20%;
+            z-index: 99;
+            transform: translateY(150px);
+            opacity: 0;
+           // animation: zoom 7s infinite;
+
+            @include breakpoint (max-xxxl){
+               right: 0;
+            }
+
+            @include breakpoint (max-xl){
+                display: none;
+            }
+
+            @include breakpoint (max-lg){
+                display: block;
+            }
+
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+    }
+
+    .swiper {
+        overflow: initial;
+    }
+
+    .swiper-slide.swiper-slide-active {
+        
+        .hero-content{
+            opacity: 1;
+            transform: translateY(0px);
+            transition: all 2500ms ease;
+        }
+
+        .hero-button  {
+            opacity: 1;
+            transform: translateY(0px);
+            transition: all 2500ms ease;
+        }
+
+        .hero-image-items {
+            .hero-image{
+                opacity: 1;
+                transform: translateY(0px);
+                transition: all 2500ms ease;
+            }
+
+            .color-box {
+                opacity: 1;
+                transform: translateX(0px);
+                transition: all 2500ms ease;
+            }
+
+            .mockup-shape {
+                opacity: 1;
+                transform: translateY(0px);
+                transition: all 2500ms ease;
+            }
+
+            .stickers-shape  {
+                opacity: 1;
+                transform: translateX(0px);
+                transition: all 2500ms ease;
+            }
+
+            .cap-shape {
+                opacity: 1;
+                transform: translateY(0px);
+                transition: all 2500ms ease;
+            }
+        }
+    }
+}

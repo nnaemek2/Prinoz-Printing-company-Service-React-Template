@@ -1,0 +1,189 @@
+.loginWrapper {
+  display: flex;
+  min-height: 100vh;
+  padding: 80px 0;
+  background: #f9f9f9;
+
+  .loginForm {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    background: #fff;
+    padding: 70px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    @media(max-width:445px){
+      padding: 70px 15px;
+    }
+
+    > h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    > p {
+      font-size: 13px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 500;
+      color: #666666;
+    }
+
+    form {
+      .inputOutline {
+        label {
+          font-size: 16px;
+          background: #fff;
+          padding: 0 10px 0 0;
+        }
+
+        input {
+          font-size: 13px;
+          letter-spacing: 0;
+        }
+
+        input::-webkit-input-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+
+        input::-moz-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+
+        input:-ms-input-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+
+        input:-moz-placeholder {
+          color: #888888;
+          opacity: 1;
+        }
+      }
+    }
+
+    .formAction {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      label {
+        span {
+          font-size: 14px;
+
+          svg {
+            width: 1.2em;
+            height: 1.2em;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        letter-spacing: 0;
+        font-size: 13px;
+        font-weight: 500;
+        color: #246fea;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+      }
+    }
+
+    .formFooter {
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .loginWithSocial {
+      display: flex;
+      justify-content: center;
+      width: 320px;
+      margin: 20px auto 0;
+
+      @media(max-width:445px){
+        width: 185px;
+      }
+
+      button {
+        min-width: unset;
+        flex: 1 1;
+        display: block;
+        text-align: center;
+        background: #3b5998;
+        margin: 5px;
+        color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 4px 9px;
+
+        &.facebook {
+          background: #3b5998;
+        }
+
+        &.twitter {
+          background: #55acee;
+        }
+
+        &.linkedin {
+          background: #0077B5;
+        }
+      }
+    }
+
+    .noteHelp {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      letter-spacing: 0;
+      font-weight: 500;
+
+      a {
+        display: inline-block;
+        color: #0077b5;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.btn-area{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+  .admin{
+    border-right: 1px solid #c2b133;
+    padding-right: 10px;
+  }
+  .vendor{
+    border-right: 1px solid #c2b133;
+    padding-right: 10px;
+  }
+
+  .auth-btn {
+    margin: 0 5px;
+    color: #c2b133;
+    line-height: 16px;
+    cursor: pointer;
+    font-size: 15px;
+    @media(max-width:445px){
+      font-size: 12px;
+    }
+  }
+}
+
+.cBtnTheme {
+  background: #DB9E30;
+  color: #fff;
+}
+
+.chCardBody{
+  padding: 20px;
+}
