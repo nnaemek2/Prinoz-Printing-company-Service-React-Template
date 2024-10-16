@@ -1,0 +1,163 @@
+.loginWrapper {
+  display: flex;
+  min-height: 100vh;
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+.loginWrapper .loginForm {
+  width: 500px;
+  max-width: 90%;
+  margin: auto;
+  background: #fff;
+  padding: 70px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 445px) {
+  .loginWrapper .loginForm {
+    padding: 70px 15px;
+  }
+}
+.loginWrapper .loginForm > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginWrapper .loginForm > p {
+  font-size: 13px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+  color: #666666;
+}
+.loginWrapper .loginForm form .inputOutline label {
+  font-size: 16px;
+  background: #fff;
+  padding: 0 10px 0 0;
+}
+.loginWrapper .loginForm form .inputOutline input {
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.loginWrapper .loginForm form .inputOutline input::-webkit-input-placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.loginWrapper .loginForm form .inputOutline input::-moz-placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.loginWrapper .loginForm form .inputOutline input:-ms-input-placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.loginWrapper .loginForm form .inputOutline input:-moz-placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.loginWrapper .loginForm .formAction {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.loginWrapper .loginForm .formAction label span {
+  font-size: 14px;
+}
+.loginWrapper .loginForm .formAction label span svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+.loginWrapper .loginForm .formAction a {
+  display: block;
+  letter-spacing: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #246fea;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.loginWrapper .loginForm .formFooter {
+  margin-top: 20px;
+  display: flex;
+}
+.loginWrapper .loginForm .loginWithSocial {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  margin: 20px auto 0;
+}
+@media (max-width: 445px) {
+  .loginWrapper .loginForm .loginWithSocial {
+    width: 185px;
+  }
+}
+.loginWrapper .loginForm .loginWithSocial button {
+  min-width: unset;
+  flex: 1 1;
+  display: block;
+  text-align: center;
+  background: #3b5998;
+  margin: 5px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 4px 9px;
+}
+.loginWrapper .loginForm .loginWithSocial button.facebook {
+  background: #3b5998;
+}
+.loginWrapper .loginForm .loginWithSocial button.twitter {
+  background: #55acee;
+}
+.loginWrapper .loginForm .loginWithSocial button.linkedin {
+  background: #0077B5;
+}
+.loginWrapper .loginForm .noteHelp {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.loginWrapper .loginForm .noteHelp a {
+  display: inline-block;
+  color: #0077b5;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.btn-area .admin {
+  border-right: 1px solid #c2b133;
+  padding-right: 10px;
+}
+.btn-area .vendor {
+  border-right: 1px solid #c2b133;
+  padding-right: 10px;
+}
+.btn-area .auth-btn {
+  margin: 0 5px;
+  color: #c2b133;
+  line-height: 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
+@media (max-width: 445px) {
+  .btn-area .auth-btn {
+    font-size: 12px;
+  }
+}
+
+.cBtnTheme {
+  background: #DB9E30;
+  color: #fff;
+}
+
+.chCardBody {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,152 @@
+.scrolling-wrap {
+	overflow: hidden;
+	white-space: nowrap;
+	display: flex;
+	gap: 20px;
+
+	.comm {
+		display: flex;
+		align-items: center;
+		animation: scroll 60s linear infinite;
+		gap: 30px;
+		cursor: pointer;
+
+		.cmn-textslide {
+			font-size: 75px;
+			font-weight: 700;
+			line-height: 95px;
+			text-transform: capitalize;
+            color: $header-color;
+            font-family: $body-font;
+
+            &.color-2 {
+                color: $theme-color;
+            }
+		}
+		// .text-custom-storke {
+		// 	-webkit-text-stroke: 1px rgb(255, 247, 247);
+		// 	-webkit-text-fill-color: transparent;
+		// }
+
+		&.cmn-style-2 {
+			margin-top: -20px;
+
+			.cmn-textslide {
+				font-size: 100px;
+				font-weight: 700;
+				color: #E1E4E9;
+				line-height: 127px;
+
+				&.color-2 {
+					color: #FF1B1B;
+				}
+
+				&.color-3 {
+					color: #5B31DE;
+				}
+			}
+		}
+
+		&.cmn-style-3 {
+			.cmn-textslide {
+				text-transform: uppercase;
+				font-size: 19px;
+				line-height: 65px;
+				color: $white;
+			}
+
+			img {
+				margin-top: -5px;
+			}
+		}
+	}
+
+	&:hover {
+		.comm {
+			animation-play-state: paused;
+		}
+	}
+
+	&.bg-style {
+		background-color: $theme-color;
+	}
+
+	@include breakpoint (max-xxl) {
+		.comm {
+			gap: 20px;
+			.cmn-textslide {
+				font-size: 60px;
+				line-height: 75px;
+			}
+			img {
+				width: 70px;
+			}
+		}
+	}
+
+	@include breakpoint (max-lg) {
+		gap: 14px;
+		.comm {
+			gap: 14px;
+			.cmn-textslide {
+				font-size: 48px;
+				line-height: 60px;
+			}
+			img {
+				width: 50px;
+				object-fit: contain;
+			}
+		}
+	}
+
+	@include breakpoint (max-sm) {
+		.comm {
+			gap: 12px;
+			.cmn-textslide {
+				font-size: 36px;
+				line-height: 35px;
+			}
+			img {
+				width: 50px;
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+.mycustom-marque {
+	&.style-about {
+		position: absolute;
+		top: 17%;
+		left: 0;
+		transform: translateY(-50%);
+		right: 0;
+		.comm {
+			.cmn-textslide {
+				color: rgba(71, 97, 164, 0.30);
+				font-size: 190px;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-family: $body-font;
+				line-height: 155px;
+			}
+		}
+	}
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+@keyframes scroll2 {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-200%);
+	}
+}

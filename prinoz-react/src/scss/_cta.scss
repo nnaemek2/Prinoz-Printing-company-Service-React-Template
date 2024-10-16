@@ -1,0 +1,166 @@
+.cta-wrapper {
+    padding: 70px 130px;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -130px;
+    z-index: 9;
+    margin-bottom: -5px;
+
+    @include breakpoint (max-lg){
+        padding: 60px 50px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 50px 40px;
+    }
+
+    .cta-image {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include breakpoint (max-md){
+            display: none;
+        }
+    }
+
+    .hand-bag {
+        position: absolute;
+        top: 0;
+        left: 62%;
+        transform: translateX(-50%);
+    }
+
+    .t-shirt-shape {
+        position: absolute;
+        bottom: 0;
+        left: 62%;
+        transform: translateX(-50%);
+    }
+
+    .prite-box {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+    }
+}
+
+.cta-wrapper-2 {
+    padding: 60px 150px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 9;
+
+    @include breakpoint (max-lg){
+        padding: 60px 50px;
+    }
+
+    @include breakpoint (max-md){
+        padding: 50px 40px;
+    }
+
+    .cta-image {
+        position: absolute;
+        top: 25px;
+        right: 65px;
+
+        @include breakpoint (max-md){
+            display: none;
+        }
+    }
+
+    .hand-bag {
+        position: absolute;
+        top: 0;
+        left: 62%;
+        transform: translateX(-50%);
+    }
+
+    .prite-box {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+    }
+
+    .cta-sticker {
+        position: absolute;
+        bottom: 15px;
+        left: 65%;
+        transform: translatex(-50%);
+    }
+}
+
+.cta-section-3 {
+    position: relative;
+
+    .mycustom-marque {
+        &.style-3 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+
+.cta-video-section {
+    position: relative;
+    
+    .container-fluid {
+        padding: 0 260px;
+
+        @include breakpoint (max-xxl){
+           padding: 0 20px;
+        }
+    }
+}
+
+.cta-video-wrapper {
+    padding: 200px 0;
+    border-radius: 21px;
+    position: relative;
+    height: 586px;
+    margin-bottom: -320px;
+    z-index: 9;
+
+    @include breakpoint (max-md){
+        height: 480px;
+    }
+
+    @include breakpoint (max-sm){
+        height: 400px;
+    }
+
+    .video-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        display: block;
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+        background-color: #600EE4;
+        color: $white;
+        text-align: center;
+        font-size: 40px;
+
+        @include breakpoint (max-md){
+            width: 160px;
+            height: 160px;
+            line-height: 160px;
+        }
+
+        @include breakpoint (max-sm){
+            width: 130px;
+            height: 130px;
+            line-height: 130px;
+            font-size: 24px;
+        }
+    }
+}

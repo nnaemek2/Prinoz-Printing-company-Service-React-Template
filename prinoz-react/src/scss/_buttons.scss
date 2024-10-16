@@ -1,0 +1,90 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 21.5px 50px;
+    min-width: 170px;
+    border-radius: 50px;
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background-color: $theme-color;
+        z-index: -1;
+        transition: all 0.4s ease-out;
+        border-radius: inherit;
+    }
+
+    &:hover {
+        color: $white;
+        box-shadow: none;
+
+        &::before {
+            width: 100%;
+        }
+    }
+
+
+    @include breakpoint (max-md){
+        padding: 20px 32px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 18px 30px;
+        font-size: 14px;
+    }
+}
+
+.theme-btn-2 {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    color: $text-color;
+    text-transform: capitalize;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.link-btn {
+    display: inline-block;
+    color: $theme-color;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    i {
+        margin-left: 10px;
+        transform: rotate(-40deg);
+    }
+}
+
+//>>>>> Component Button End <<<<<//
+
+
